@@ -4,6 +4,7 @@ import HeadMeta from "../components/HeadMeta.astro";
 import AssetsScripts from "../components/AssetsScripts.astro";
 import Navbar from "../components/Navbar.astro";
 
+const baseUrl = import.meta.env.BASE_URL;
 const {
   title = "WORLD LOGISTICS & COMMERCE S.A.C.",
   description = "",
@@ -44,7 +45,7 @@ console.log("Astro.props", Astro.props.headerActive);
   <body>
     <div class="hero_area">
       <div class="hero_bg_box">
-        <img src="images/slider-bg.jpg" alt="" />
+        <img src={`${baseUrl}images/slider-bg.jpg`} alt="" />
       </div>
       <header class="header_section">
         <div class="header_top">
