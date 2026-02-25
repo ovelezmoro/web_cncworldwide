@@ -1,0 +1,39 @@
+---
+const baseUrl = import.meta.env.BASE_URL;
+const isActive = (key: any) => (active === key ? "active" : "");
+const { active = "" } = Astro.props;
+---
+
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <ul class="navbar-nav">
+    <li class={`nav-item ${isActive("inicio")}`}>
+      <a class="nav-link" href={`${baseUrl}`}
+        >Home <span class="sr-only">(current)</span></a
+      >
+    </li>
+    <li class={`nav-item ${isActive("about")}`}>
+      <a class="nav-link" href={`${baseUrl}about`}> Nosotros</a>
+    </li>
+    <li class={`nav-item ${isActive("services")}`}>
+      <a class="nav-link" href={`${baseUrl}service`}>Servicios</a>
+    </li>
+    
+    <li class={`nav-item ${isActive("contact")}`}>
+      <a class="nav-link" href={`${baseUrl}contact`}>Contactanos</a>
+    </li>
+
+    <li class={`nav-item ${isActive("rate")}`}>
+      <a class="nav-link" href={`${baseUrl}rate`}>Tarifario</a>
+    </li>
+
+    <li class={`nav-item ${isActive("complaints")}`}>
+      <a class="nav-link" href={`${baseUrl}complaints`}>Libro de reclamaciones</a>
+    </li>
+
+    <li class={`nav-item ${isActive("tracking")}`}>
+      <a class="nav-link btn btn-primary" href={`https://www.gsgroup.com.pe/webtrackinacgt/index.php`}>
+        <i class="fa fa-search" aria-hidden="true"></i> Tracking</a
+      >
+    </li>
+  </ul>
+</div>

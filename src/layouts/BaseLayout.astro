@@ -1,0 +1,106 @@
+---
+import Footer from "../components/Footer.astro";
+import HeadMeta from "../components/HeadMeta.astro";
+import AssetsScripts from "../components/AssetsScripts.astro";
+import Navbar from "../components/Navbar.astro";
+
+const {
+  title = "WORLD LOGISTICS & COMMERCE S.A.C.",
+  description = "",
+  keywords = "",
+  author = "EXE MARKETING DIGITAL INTEGRADO",
+  themeColor = "#031c56",
+  ogTitle = "WORLD LOGISTICS & COMMERCE S.A.C.",
+  ogDescription = "",
+  ogImage = "",
+  ogUrl = "",
+  ogSiteName = "",
+  htmlId = "inicio",
+  headerActive = "",
+  showPowered = false,
+  includeAcglobal = false,
+} = Astro.props;
+console.log("Astro.props", Astro.props.headerActive);
+---
+
+<!doctype html>
+<html>
+  <head>
+    <HeadMeta
+      title={title}
+      description={description}
+      keywords={keywords}
+      author={author}
+      themeColor={themeColor}
+      ogTitle={ogTitle}
+      ogDescription={ogDescription}
+      ogImage={ogImage}
+      ogUrl={ogUrl}
+      ogSiteName={ogSiteName}
+    >
+      <slot name="head" />
+    </HeadMeta>
+  </head>
+  <body>
+    <div class="hero_area">
+      <div class="hero_bg_box">
+        <img src="images/slider-bg.jpg" alt="" />
+      </div>
+      <header class="header_section">
+        <div class="header_top">
+          <div class="container-fluid" style="background-color: white;">
+            <div class="header_top_content">
+              <a class="navbar-brand d-none d-lg-flex" href="index.html">
+                <img
+                  src="https://www.cncworldwide.com/wp-content/uploads/2024/11/CNC_Logo-2.gif"
+                  style="width: 100px;"
+                />
+              </a>
+              <div class="contact_nav">
+                <a href="" style="color: #1a365d">
+                  <i class="fa fa-phone" aria-hidden="true"></i>
+                  <span> +01 123455678990 </span>
+                </a>
+                <a href="" style="color: #1a365d">
+                  <i class="fa fa-envelope" aria-hidden="true"></i>
+                  <span> demo@gmail.com </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header_bottom">
+          <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg custom_nav-container">
+              <a class="navbar-brand d-flex d-lg-none" href="index.html">
+                <img
+                  src="https://www.cncworldwide.com/wp-content/uploads/2024/11/CNC_Logo-2.gif"
+                  style="width: 100px;"
+                />
+              </a>
+
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class=""> </span>
+              </button>
+
+              <Navbar active={headerActive} />
+            </nav>
+          </div>
+        </div>
+      </header>
+
+      <slot name="slider_section" />
+    </div>
+    <slot />
+    <Footer />
+    <AssetsScripts />
+  </body>
+</html>

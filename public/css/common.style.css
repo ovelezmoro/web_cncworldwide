@@ -1,0 +1,42 @@
+.header_top .contact_nav a {
+    color: #1a365d !important;
+  }
+  .custom_nav-container .navbar-nav .nav-item:hover .nav-link,
+  .custom_nav-container .navbar-nav .nav-item.active .nav-link {
+    color: #ee2739;
+  }
+  .slider_section .detail-box a {
+    background-color: #ee2739;
+    color: white;
+  }
+  .about_section .detail-box a {
+    background-color: #ee2739;
+    color: white;
+  }
+  .heading_container h2 {
+    border-left: 5px solid #ee2739;
+  }
+  .contact_section .form_container button {
+    background-color: #ee2739;
+    color: white;
+  }
+  .client_section .owl-carousel .owl-nav .owl-prev,
+  .client_section .owl-carousel .owl-nav .owl-next {
+    background-color: #ee2739;
+    color: white;
+  }
+  .info_section form button {
+    background-color: #ee2739;
+    color: white;
+  }
+  .btn-primary {
+    background-color: #ee2739;
+    border-color: #ee2739;
+  }
+  h5 {
+    text-align: center;
+    margin: auto;
+    color: white;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+  }

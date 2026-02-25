@@ -1,0 +1,358 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import HeaderCarrousel from '../components/HeaderCarrousel.astro';
+---
+<BaseLayout headerActive="inicio">
+  <Fragment slot={"slider_section"} >
+    <HeaderCarrousel />
+  </Fragment>
+
+  <section class="about_section layout_padding">
+    <div class="container  ">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="detail-box">
+            <div class="heading_container">
+              <h2>
+                Sobre Nosotros
+              </h2>
+            </div>
+            <p>
+              Hay muchas variaciones de los pasajes de Lorem Ipsum disponibles, pero la mayoría han sufrido alteraciones
+              de alguna forma, por humor inyectado, o palabras aleatorias que no parecen ni siquiera creíbles. Si vas
+              a usar un pasaje de Lorem Ipsum, debes asegurarte de que no haya nada embarazoso oculto en el texto. Todo
+            </p>
+            <a href="">
+              Leer Más
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6 ">
+          <div class="img-box">
+            <img src="images/about-img.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="service_section layout_padding">
+    <div class="service_container">
+      <div class="container ">
+        <div class="heading_container">
+          <h2>
+            Nuestros Servicios
+          </h2>
+          <p>
+            Hay muchas variaciones de los pasajes de Lorem Ipsum disponibles, pero la mayoría han sufrido alteraciones
+          </p>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-lg-4 mx-auto ">
+            <div class="box ">
+              <div class="img-box">
+                <img src="images/s1.jpg" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Transporte Terrestre
+                </h5>
+                <p>
+                  el hecho de que un lector se distraerá con el contenido legible de una página al mirar su diseño.
+                  El
+                  punto de usar
+                </p>
+                <a href="">
+                  Leer Más
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mx-auto ">
+            <div class="box ">
+              <div class="img-box">
+                <img src="images/s2.jpg" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Carga Aérea
+                </h5>
+                <p>
+                  fact that a reader will be distracted by the readable content of a page when looking at its layout.
+                  The
+                  point of using
+                </p>
+                <a href="">
+                  Read More
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mx-auto ">
+            <div class="box ">
+              <div class="img-box">
+                <img src="images/s3.jpg" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Transporte Marítimo
+                </h5>
+                <p>
+                  fact that a reader will be distracted by the readable content of a page when looking at its layout.
+                  The
+                  point of using
+                </p>
+                <a href="">
+                  Read More
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact_section layout_padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="why_box">
+            <div class="heading_container">
+              <h2>
+                ¿Por qué elegirnos?
+              </h2>
+              <div class="box">
+                <div class="img-box">
+                  <img src="images/w1.png" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    Clientes Satisfechos
+                  </h5>
+                  <p>
+                    Officia expedita sequi dolorum error consectetur, quos provident repudiandae at, rerum veniam doloremque velit eius
+                  </p>
+                </div>
+              </div>
+              <div class="box">
+                <div class="img-box">
+                  <img src="images/w2.png" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    Seguimiento de Envíos
+                  </h5>
+                  <p>
+                    Officia expedita sequi dolorum error consectetur, quos provident repudiandae at, rerum veniam doloremque velit eius
+                  </p>
+                </div>
+              </div>
+              <div class="box">
+                <div class="img-box">
+                  <img src="images/w3.png" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    Soporte al Cliente
+                  </h5>
+                  <p>
+                    Officia expedita sequi dolorum error consectetur, quos provident repudiandae at, rerum veniam doloremque velit eius
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form_container">
+            <div class="heading_container">
+              <h2>
+                Contáctanos
+              </h2>
+            </div>
+            <form action="">
+              <input type="text" placeholder="Tu Nombre" />
+              <input type="text" placeholder="Teléfono" />
+              <input type="email" placeholder="Correo Electrónico" />
+              <input type="text" class="message-box" placeholder="Mensaje" />
+              <div class="btn_box">
+                <button>
+                  ENVIAR
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="client_section layout_padding-bottom">
+    <div class="container">
+      <div class="heading_container">
+        <h2>
+          Lo que dicen nuestros clientes
+        </h2>
+      </div>
+      <div class="client_container">
+        <div class="carousel-wrap ">
+          <div class="owl-carousel">
+            <div class="item">
+              <div class="box">
+                <div class="img-box">
+                  <img src="images/client-1.jpg" alt="" class="img-1">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    Mark Evans
+                  </h5>
+                  <h6>
+                    Magna
+                  </h6>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="box">
+                <div class="img-box">
+                  <img src="images/client-2.jpg" alt="" class="img-1">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    Anthony White
+                  </h5>
+                  <h6>
+                    Magna
+                  </h6>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="box">
+                <div class="img-box">
+                  <img src="images/client-1.jpg" alt="" class="img-1">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    Mark Evans
+                  </h5>
+                  <h6>
+                    Magna
+                  </h6>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="box">
+                <div class="img-box">
+                  <img src="images/client-2.jpg" alt="" class="img-1">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    Anthony White
+                  </h5>
+                  <h6>
+                    Magna
+                  </h6>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="info_section layout_padding2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-lg-3 info-col">
+          <div class="info_detail">
+            <h4>
+              Acerca de
+            </h4>
+            <p>
+              Necesario, haciendo de este el primer generador verdadero en Internet. Utiliza un diccionario de más de 200 palabras latinas, combinado con un puñado
+            </p>
+            <div class="info_social">
+              <a href="">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 info-col">
+          <div class="info_contact">
+            <h4>
+              Dirección
+            </h4>
+            <div class="contact_link_box">
+              <a href="">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <span>
+                  Ubicación
+                </span>
+              </a>
+              <a href="">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <span>
+                  Llama al +01 1234567890
+                </span>
+              </a>
+              <a href="">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <span>
+                  demo@gmail.com
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 info-col">
+          <div class="info_contact">
+            <h4>
+              Suscríbete
+            </h4>
+            <form action="#">
+              <input type="text" placeholder="Ingresa tu correo" />
+              <button type="submit">
+                Suscribirse
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 info-col">
+          <div class="map_container">
+            <div class="map">
+              <div id="googleMap"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</BaseLayout>
