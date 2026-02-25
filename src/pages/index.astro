@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import HeaderCarrousel from '../components/HeaderCarrousel.astro';
+const baseUrl = import.meta.env.BASE_URL;
 ---
 <BaseLayout headerActive="inicio">
   <Fragment slot={"slider_section"} >
@@ -29,7 +30,7 @@ import HeaderCarrousel from '../components/HeaderCarrousel.astro';
         </div>
         <div class="col-md-6 ">
           <div class="img-box">
-            <img src="images/about-img.png" alt="">
+            <img src={`${baseUrl}images/about-img.png`} alt="">
           </div>
         </div>
       </div>
@@ -51,7 +52,7 @@ import HeaderCarrousel from '../components/HeaderCarrousel.astro';
           <div class="col-md-6 col-lg-4 mx-auto ">
             <div class="box ">
               <div class="img-box">
-                <img src="images/s1.jpg" alt="">
+                <img src={`${baseUrl}images/s1.jpg`} alt="">
               </div>
               <div class="detail-box">
                 <h5>
@@ -71,7 +72,7 @@ import HeaderCarrousel from '../components/HeaderCarrousel.astro';
           <div class="col-md-6 col-lg-4 mx-auto ">
             <div class="box ">
               <div class="img-box">
-                <img src="images/s2.jpg" alt="">
+                <img src={`${baseUrl}images/s2.jpg`} alt="">
               </div>
               <div class="detail-box">
                 <h5>
@@ -91,7 +92,7 @@ import HeaderCarrousel from '../components/HeaderCarrousel.astro';
           <div class="col-md-6 col-lg-4 mx-auto ">
             <div class="box ">
               <div class="img-box">
-                <img src="images/s3.jpg" alt="">
+                <img src={`${baseUrl}images/s3.jpg`} alt="">
               </div>
               <div class="detail-box">
                 <h5>
@@ -124,7 +125,7 @@ import HeaderCarrousel from '../components/HeaderCarrousel.astro';
               </h2>
               <div class="box">
                 <div class="img-box">
-                  <img src="images/w1.png" alt="">
+                  <img src={`${baseUrl}images/w1.png`} alt="">
                 </div>
                 <div class="detail-box">
                   <h5>
@@ -137,7 +138,7 @@ import HeaderCarrousel from '../components/HeaderCarrousel.astro';
               </div>
               <div class="box">
                 <div class="img-box">
-                  <img src="images/w2.png" alt="">
+                  <img src={`${baseUrl}images/w2.png`} alt="">
                 </div>
                 <div class="detail-box">
                   <h5>
@@ -150,7 +151,7 @@ import HeaderCarrousel from '../components/HeaderCarrousel.astro';
               </div>
               <div class="box">
                 <div class="img-box">
-                  <img src="images/w3.png" alt="">
+                  <img src={`${baseUrl}images/w3.png`} alt="">
                 </div>
                 <div class="detail-box">
                   <h5>
@@ -201,7 +202,7 @@ import HeaderCarrousel from '../components/HeaderCarrousel.astro';
             <div class="item">
               <div class="box">
                 <div class="img-box">
-                  <img src="images/client-1.jpg" alt="" class="img-1">
+                  <img src={`${baseUrl}images/client-1.jpg`} alt="" class="img-1">
                 </div>
                 <div class="detail-box">
                   <h5>
@@ -219,7 +220,7 @@ import HeaderCarrousel from '../components/HeaderCarrousel.astro';
             <div class="item">
               <div class="box">
                 <div class="img-box">
-                  <img src="images/client-2.jpg" alt="" class="img-1">
+                  <img src={`${baseUrl}images/client-2.jpg`} alt="" class="img-1">
                 </div>
                 <div class="detail-box">
                   <h5>
@@ -237,7 +238,7 @@ import HeaderCarrousel from '../components/HeaderCarrousel.astro';
             <div class="item">
               <div class="box">
                 <div class="img-box">
-                  <img src="images/client-1.jpg" alt="" class="img-1">
+                  <img src={`${baseUrl}images/client-1.jpg`} alt="" class="img-1">
                 </div>
                 <div class="detail-box">
                   <h5>
@@ -255,7 +256,7 @@ import HeaderCarrousel from '../components/HeaderCarrousel.astro';
             <div class="item">
               <div class="box">
                 <div class="img-box">
-                  <img src="images/client-2.jpg" alt="" class="img-1">
+                  <img src={`${baseUrl}images/client-2.jpg`} alt="" class="img-1">
                 </div>
                 <div class="detail-box">
                   <h5>

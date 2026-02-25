@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+const baseUrl = import.meta.env.BASE_URL;
 ---
 <BaseLayout headerActive="about">
   <Fragment slot={"slider_section"} >
@@ -29,7 +30,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         </div>
         <div class="col-md-6 ">
           <div class="img-box">
-            <img src="images/about-img.png" alt="">
+            <img src={`${baseUrl}images/about-img.png`} alt="">
           </div>
         </div>
       </div>
