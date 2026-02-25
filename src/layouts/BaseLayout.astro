@@ -3,6 +3,7 @@ import Footer from "../components/Footer.astro";
 import HeadMeta from "../components/HeadMeta.astro";
 import AssetsScripts from "../components/AssetsScripts.astro";
 import Navbar from "../components/Navbar.astro";
+import WhatsAppFloat from "../components/WhatsAppFloat.astro";
 
 const baseUrl = import.meta.env.BASE_URL;
 const {
@@ -102,6 +103,7 @@ console.log("Astro.props", Astro.props.headerActive);
     </div>
     <slot />
     <Footer />
+    <WhatsAppFloat />
     <AssetsScripts />
   </body>
 </html>

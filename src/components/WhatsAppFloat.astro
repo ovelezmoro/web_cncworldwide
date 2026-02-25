@@ -1,0 +1,8 @@
+---
+const baseUrl = import.meta.env.BASE_URL;
+const whatsappNumber = '51932096112';
+const whatsappMessage = 'Hola, te quisiera más información.';
+---
+<a style="cursor: pointer; position: fixed;right: 15px;bottom: 20px;" href={`https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${encodeURIComponent(whatsappMessage)}`} class="float" target="_blank">
+  <img src={`${baseUrl}images/logo-wasap.png`} style="width: 60px;" />
+</a>
